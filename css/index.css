@@ -43,3 +43,7 @@
 .dados-os{
     margin-top: 30px;
 }
+
+.paginacao .pagination {
+    margin: 0;
+}
