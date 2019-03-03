@@ -6,6 +6,7 @@
     <title>My page</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -231,6 +232,15 @@
                                         <input type="text" name="valor" id="Valor" class="form-control">
                                     </div>
                                 </div>
+                                <div class="form-group date col-sm-4">
+                                    <label class="control-label" for="Data">Data de entrega</label>
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="text" name="Data" id="Data" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -244,6 +254,8 @@
     </div>
     <script src="js/jquery-3.3.1.slim.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="locales/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
