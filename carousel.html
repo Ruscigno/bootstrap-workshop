@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Criando um Carousel</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/affix.css">
+</head>
+<body data-spy="scroll" data-target="#menu" data-offset="100">
+    <div class="container">
+        <h1>Criando um Carousel</h1>
+        
+        <div id="carrossel" class="carousel slide" data-ride="carousel" data-interval="500">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="carrossel" data-slide-to="0"></li>
+                <li data-target="carrossel" data-slide-to="1"></li>
+                <li data-target="carrossel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://unsplash.it/1280/720?random" alt="random image">
+                    <div class="carousel-caption">
+                        <h3>slide 1</h3>
+                        <p>este é um slide muito bonito</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://unsplash.it/1279/720?random" alt="random image">
+                </div>
+                <div class="item">
+                    <img src="https://unsplash.it/1278/720?random" alt="random image">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carrossel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carrossel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.slim.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
